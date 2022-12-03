@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="block">
+        <input type="button" value="нажми меня" id="elem">
+        <input type="button" value="нажми меня 2" id="elem2">
+        </div>
+        <script>
+            function handler1(){
+            
+            elem.onclick = function (event){
+            // console.log(event.type);
+            console.log(event.target);
+            }}
+            function handler2(){
+            elem2.onclick = function(event2){
+                console.log(event2.target)
+            }}
+            block.addEventListener("click",handler1);
+            block.addEventListener("click",handler2);
+        </script>
+    
+    <!-- <input type="button" value="На каком элементе сработал обработчик?" id="elem" />
+    <script>
+        elem.onclick = function (event){
+            console.log(event.target);
+        }
+    </script> -->
+    
+    <!-- <input type="button" id="button" value="Кнопка">
+    <p id="text">Hello world</p>
+    <script>
+        function hidder(){
+        text.innerHTML = "";
+    }
+    button.addEventListener('click',hidder)
+    </script> -->
+    <!-- //  <input type="button" id="elem" value="Нажми"> -->
+    
+    <!-- //     elem.onclick = function countRabbits(){
+    //     document.querySelector('rabbit')
+        
+    //     for( let i = 1; i < 5; i++) {
+    //     alert ("rabbit" + i)
+    //     }}
+    // </script>--> 
+</body> 
+</html>
